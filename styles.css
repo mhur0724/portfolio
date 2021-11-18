@@ -105,6 +105,8 @@ header {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   background: white;
   border-radius: 4px;
@@ -115,6 +117,41 @@ header {
   margin-bottom: 1rem;
 }
 
+.nintendo {
+  align-self: flex-start;
+  font-family: "Press Start 2P", cursive;
+  color: #e60012;
+  font-size: 0.75rem;
+  border: 4px solid #e60012;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.nintendo:hover {
+  cursor: pointer;
+}
+.more__about__me {
+  color: white;
+  margin: 0 1rem;
+}
+
+.my__toolkit {
+  margin: 0 1rem;
+  color: white;
+}
+
+.my__toolkit__ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.my__toolkit__ul__li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* dodgers theme */
 .body--dodgers {
   background: white;
@@ -145,6 +182,9 @@ header {
   color: white;
 }
 
+.nintendo--dodgers {
+  background: white;
+}
 .background--dodgers_blue {
   background: var(--dodger-blue);
 }

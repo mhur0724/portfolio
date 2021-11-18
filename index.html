@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dbd4f81be.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -18,26 +23,33 @@
             <li class="header__ul__li"><a href="#">GitHub</a></li>
             <li class="header__ul__li"><a href="https://www.linkedin.com/in/matthewhur/">LinkedIn</a></li>
             <li class="header__ul__li"><a href="#">Resume</a></li>
-            <li class="header__ul__li"><img class="theme" src="dodgers-logo.png" alt=""></li>
+            <li class="header__ul__li"><img class="theme" src="images/dodgers-logo.png" alt=""></li>
         </ul>
+        
     </header>
     <main>
+        <section>
         <div class="about__me">
             <div class="about__me__intro">
                     <span>Hi, My name is Matthew Hur.</span>
                     <br>
                     <p>I am a front end web developer based in Los Angeles.</p>
-                    <p>Outside of web development you can find me playing &#127936 <span id="knee__injury">(out for knee injury)</span> , playing &#127918, or losing at &#9823.</p>
+                    <p>Outside of web development you can find me playing &#127936, playing &#127918, or losing at &#9823.</p>
 
             </div>
         </div>
+        </section>
+        <section>
+
 
         <div class="projects">
             <h1>Click on any project to learn more!</h1>
-            <div class="project">
-                <h1 class="project__title">Notflix</h1>
-                <p>This is a clone of the landing page of Netflix that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
+            <div class="project ">
+                <h1 class="project__title nintendo">Nintendon't</h1>
+                <p>This is a clone of Nintendo's landing page that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
                 <br>
+                <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
+                <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
             </div>
             <div class="project">
                 <h1 class="project__title">Project 2</h1>
@@ -48,6 +60,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui rerum quibusdam, vel voluptas quo officia quisquam nesciunt placeat voluptate saepe eveniet, praesentium, recusandae aspernatur.</p>
             </div>
         </div>
+        </section>
+
+        <section>
+            
         <div class="more__about__me">
 
             <p>Thanks for scrolling this far! If you're curious, here's a little more about me. I graduated from Boston University with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've dabbled in various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) but none of them really captured my interest quite like Front End web development. Since then I've been pursuing employment as a Front End Web Dev.</p>
@@ -55,13 +71,33 @@
 
         </div>
          
+
+        </section>
+
+        <section>
+
+
         <div class="my__toolkit">
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
+            <h1>My Toolkit <i class="fas fa-toolbox"></i></h1>
+            <ul class="my__toolkit__ul">
+                <li class="my__toolkit__ul__li">
+                    <i class="fab fa-html5 fa-3x"></i>
+
+                    <p>HTML5</p>
+                </li>
+                <li class="my__toolkit__ul__li">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+
+                    <p>CSS</p>
+                </li>
+                <li class="my__toolkit__ul__li">
+                    <i class="fab fa-js-square fa-3x"></i>
+
+                    <p>Javascript</p>
+                </li>
             </ul>
         </div>
+        </section>
     </main>
     <footer>
 
