@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel.css">
     <script src="https://kit.fontawesome.com/1dbd4f81be.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
     
@@ -46,18 +47,63 @@
             <h1>Click on any project to learn more!</h1>
             <div class="project ">
                 <h1 class="project__title nintendo">Nintendon't</h1>
+                
+                <div class="project__links">
+                    <a href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
+                    <a href="https://github.com/mhur0724/nintendo-nt" target="_blank">Github Code</a>
+                </div>
+
+                
                 <p>This is a clone of Nintendo's landing page that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
                 <br>
                 <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
                 <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
             </div>
-            <div class="project">
-                <h1 class="project__title">Project 2</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui rerum quibusdam, vel voluptas quo officia quisquam nesciunt placeat voluptate saepe eveniet, praesentium, recusandae aspernatur.</p>
-            </div>
-            <div class="project">
-                <h1 class="project__title">Project 3</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui rerum quibusdam, vel voluptas quo officia quisquam nesciunt placeat voluptate saepe eveniet, praesentium, recusandae aspernatur.</p>
+            <div class="project studio-ghibli-card">
+                <h1 class="project__title studio-ghibli">Studio Ghibli 3D Photo</h1>
+                
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">
+                    &#8656;
+                    </button>
+                    <button class="carousel-button next" data-carousel-button="next">
+                    &#8658;
+                    </button>
+                    <ul data-slides>
+                    <li class="slide" data-active>
+                        <h2>Howl's Moving Castle</h2>
+                        <img
+                        src="images/howl's-moving-castle.jpg"
+                        alt="howl's-moving-castle"
+                        />
+                    </li>
+                    <li class="slide">
+                        <h2>Kiki's Delivery Service</h2>
+
+                        <img
+                        src="images/kiki's-delivery-service.jpg"
+                        alt="kiki's-delivery-service"
+                        />
+                    </li>
+                    <li class="slide">
+                        <h2>Princess Mononoke</h2>
+
+                        <img src="images/princess-mononoke.jpg" alt="princess-mononoke" />
+                    </li>
+                    <li class="slide">
+                        <h2>Whipser of the Heart</h2>
+                        <img
+                        src="images/whisper-of-the-heart.jpg"
+                        alt="whisper-of-the-heart.jpg"
+                        />
+                    </li>
+
+                    <li class="slide">
+                        <h2>The Wind Rises</h2>
+                        <img src="images/wind-rises.jpg" alt="wind-rises.jpg" />
+                    </li>
+                    </ul>
+                </div>
             </div>
         </div>
         </section>
