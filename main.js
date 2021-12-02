@@ -7,10 +7,17 @@ const about__me__intro = document.querySelector(".about__me__intro");
 const projects = document.querySelector(".projects");
 const project = document.querySelectorAll(".project");
 const nintendo = document.querySelector(".nintendo");
+const nintendoImgBackgroundColor = document.querySelector(
+  ".nintendo-card__project-image"
+);
 const audioCoin = document.querySelector(".nintendo-audio-coin");
 const audio1Up = document.querySelector(".nintendo-audio-1up");
 const menuBtn = document.querySelector(".menu-button");
 const menuBtnLines = document.querySelector(".menu-button__lines");
+const moreAboutMe = Array.from(
+  document.querySelector(".more__about__me").children
+);
+const toolKit = Array.from(document.querySelector(".my__toolkit").children);
 
 theme.addEventListener("click", changeTheme);
 nintendo.addEventListener("click", nintendoPlay);
@@ -21,6 +28,7 @@ menuBtn.addEventListener("click", () => {
 
 function changeTheme() {
   body.classList.toggle("body--dodgers");
+  header__ul.parentElement.classList.toggle("header__ul--dodgers");
   header__ul.classList.toggle("header__ul--dodgers");
   header__ul__li.forEach((element) =>
     element.classList.toggle("header__ul__li--dodgers")
@@ -34,6 +42,15 @@ function changeTheme() {
     theme.src = "images/lakers-logo.png";
   } else theme.src = "images/dodgers-logo.png";
   nintendo.classList.toggle("nintendo--dodgers");
+  moreAboutMe.forEach((item) => {
+    item.classList.toggle("color--dodgers-red");
+  });
+  toolKit.forEach((item) => {
+    item.classList.toggle("color--dodgers-red");
+  });
+  nintendoImgBackgroundColor.classList.toggle(
+    "nintendo-card__project-image--dodgers"
+  );
 }
 
 let nintendoClick = 0;

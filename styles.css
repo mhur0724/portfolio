@@ -1,8 +1,10 @@
 :root {
   --dodger-blue: #005a9c;
+
   --dodger-red: #ef3e42;
   --dodger-silver: #a5acaf;
   --lakers-purple: #552583;
+  --lakers-purple: #663a82;
   --lakers-gold: #fdb927;
 }
 
@@ -22,18 +24,6 @@ body {
   font-family: "Sora", sans-serif;
 }
 
-/* Header */
-/* .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-} */
-
 .header__ul {
   position: fixed;
   top: 0;
@@ -41,8 +31,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
   transform: translateX(-100vw);
   transition: transform 0.3s ease-in-out;
   background: var(--lakers-purple);
@@ -70,7 +60,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 0 1em;
   transition: background 0.3s ease-in-out;
   color: var(--lakers-gold);
@@ -85,11 +75,12 @@ body {
 
 .theme__image:hover {
   cursor: pointer;
+  transform: scale(1.25);
 }
 
 .menu-button {
   position: fixed;
-  padding: 1rem;
+  padding: 2rem 1rem;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
@@ -146,8 +137,7 @@ body {
 
 .about__me {
   height: 100vh;
-  width: 100vw;
-  margin: 1rem;
+  padding: 1rem;
   color: var(--lakers-purple);
 }
 
@@ -159,8 +149,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   justify-content: center;
-  text-align: left;
 }
 
 .about__me__intro p {
@@ -184,8 +174,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+
   background: white;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   margin: 1rem;
   padding: 1rem;
 }
@@ -193,10 +184,15 @@ body {
   margin: 0 auto 1rem;
 }
 
-.project__image {
+.nintendo-card__project-image {
   position: relative;
+  background: #b19cd9;
+  border-radius: 0.5rem;
 }
 
+.nintendo-card__project-image--dodgers {
+  background: #a2d2ff;
+}
 .overlay {
   display: flex;
   justify-content: center;
@@ -208,13 +204,17 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 .overlay a {
   text-decoration: none;
   background: white;
   margin: auto;
+  color: #e60012;
 }
+
 .project__image:hover .overlay {
   opacity: 1;
 }
@@ -235,6 +235,7 @@ body {
   border-radius: 2rem;
   padding: 0.5rem;
   transition: transform 100ms ease-in-out;
+  background: white;
 }
 
 .nintendo:focus {
@@ -261,30 +262,45 @@ body {
 
 .carousel-item {
   height: 100%;
-  background: #777;
+}
+
+.carousel-item h5 {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .more__about__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   margin: 0 1rem;
+  text-align: center;
+}
+.more__about__me > * {
+  max-width: 62.5rem;
 }
 
 .my__toolkit {
+  display: flex;
+  flex-direction: column;
   margin: 0 1rem;
   color: white;
+  align-items: center;
 }
 
 .my__toolkit__ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  margin: 1rem;
 }
 
 .my__toolkit__ul__li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1.5rem;
 }
 /* dodgers theme */
 .body--dodgers {
@@ -324,7 +340,7 @@ body {
 .nintendo--dodgers {
   background: white;
 }
-.background--dodgers_blue {
+.background--dodgers-blue {
   background: var(--dodger-blue);
 }
 
@@ -332,10 +348,64 @@ body {
   color: var(--dodger-blue);
 }
 
-.background--dodgers_red {
+.background--dodgers-red {
   background: var(--dodger-red);
 }
 
 .color--dodgers-red {
   color: var(--dodger-red);
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    position: fixed;
+    height: calc(50px + 1rem);
+    width: 100vw;
+    background: var(--lakers-purple);
+    justify-content: center;
+    z-index: 3;
+  }
+  .header__ul {
+    transform: none;
+    flex-direction: row;
+    height: calc(50px + 1rem);
+  }
+
+  .header__ul__li a {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .header__ul__links {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .theme__image {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0.5rem 1rem;
+    z-index: 4;
+  }
+
+  .about__me {
+    text-align: center;
+  }
+  .projects {
+    align-items: center;
+  }
+  .project__text {
+    display: block;
+
+    margin-top: 1rem;
+  }
+  .project {
+    max-width: 40rem;
+  }
 }

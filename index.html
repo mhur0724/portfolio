@@ -27,13 +27,17 @@
         </div>
         <ul class="header__ul">
     
-                <li class="header__ul__li"><a href="#">Projects</a></li>
-                <li class="header__ul__li"><a href="#">GitHub</a></li>
-                <li class="header__ul__li"><a href="https://www.linkedin.com/in/matthewhur/">LinkedIn</a></li>
-                <li class="header__ul__li"><a href="#">Resume</a></li>
+                <div class="header__ul__links">
+                    <li class="header__ul__li"><a href="#projects">Projects</a></li>
+                    <li class="header__ul__li"><a href="#">GitHub</a></li>
+                    <li class="header__ul__li"><a href="https://www.linkedin.com/in/matthewhur/">LinkedIn</a></li>
+                    <li class="header__ul__li"><a href="#">Resume</a></li>
+                </div>
 
 
-                <li class="header__ul__li"><div class="theme"><img class="theme__image" src="images/dodgers-logo.png" alt=""></div></li>
+                <div class="header__ul__theme">
+                    <li class="header__ul__li"><div class="theme"><img class="theme__image" src="images/dodgers-logo.png" alt=""></div></li>
+                </div>
 
         </ul>
     </header>
@@ -44,22 +48,22 @@
                     <span>Hi, My name is Matthew Hur.</span>
                     <br>
                     <p>I am a front end web developer based in Los Angeles.</p>
-                    <p>Outside of web development you can find me practicing &#127936, playing &#127918, or losing at &#9823.</p>
+                    <p>Outside of web development you can find me practicing &#127936, playing &#127918, or losing at ♟️</p>
 
             </div>
         </div>
         </section>
-        <section>
+        <section id="projects">
 
 
-        <div class="projects">
-            <h1>Click on any project to learn more!</h1>
+        <div class="projects" >
+            <h1 >Click on any project to learn more!</h1>
             
             <div class="project nintendo-card">
                     <h1 class="project__title nintendo">Nintendon't</h1>
 
-                <div class="project__image">
-                    <img src="images/nintendo-nt_image.png" alt="">
+                <div class="project__image nintendo-card__project-image">
+                    <img src="images/nintendo-nt-mock.png" alt="">
                     <div class="overlay">
                         <a class="nintendo" href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
                         <a class="nintendo" href="https://github.com/mhur0724/nintendo-nt" target="_blank">Github</a>
@@ -68,18 +72,14 @@
 
                 <div class="project__text">
                     
-                    <div class="project__links">
-                        <a href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
-                        <a href="https://github.com/mhur0724/nintendo-nt" target="_blank">Github Code</a>
-                    </div>
-                    
+
                     <p>This is a clone of Nintendo's landing page that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
                 </div>
                 <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
                 <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
             </div>
             <div class="project studio-ghibli-card">
-                <h1>Studio Ghibli 3D Image</h1>
+                <h1>Studio Ghibli 3D Still</h1>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-interval="10000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -117,6 +117,7 @@
                             <img src="images/wind-rises.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption  d-md-block">
                             <h5>The Wind Rises</h5>
+                            
                         </div>
                         </div>
                 </div>
@@ -129,8 +130,33 @@
     <span class="visually-hidden">Next</span>
   </button>
                 </div>
+                <div class="project__text">
+                    <p>This project itself isn't a web development project, but this card implements a bootstrap carousel to display these 3D stills.</p>
+                    
+                    <p>I made these for my friends who all love Ghibli movies. A lot of hours went into this but I think it turned out great! </p>
+
+                    <p>I used CAD to design everything, 3D printed everything on Form 3 SLA printers, and painted everything with acrylic and spray paint. </p>
+                </div>
             </div>
-                
+            <div class="project portfolio-card">
+                <h1 class="project__title portfolio__title">My Portfolio</h1>
+
+                <div class="project__image nintendo-card__project-image">
+                    <img src="images/nintendo-nt-mock.png" alt="">
+                    <div class="overlay">
+                        <a class="nintendo" href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
+                        <a class="nintendo" href="https://github.com/mhur0724/nintendo-nt" target="_blank">Github</a>
+                    </div>
+                </div>
+
+                <div class="project__text">
+                    
+
+                    <p>My own portfolio was made using HTML, CSS, and JS.</p>
+                </div>
+                <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
+                <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
+            </div>
 
 
         </div>
@@ -140,6 +166,7 @@
             
         <div class="more__about__me">
 
+            <h1>About Me</h1>
             <p>Thanks for scrolling this far! If you're curious, here's a little more about me. I graduated from Boston University with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've dabbled in various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) but none of them really captured my interest quite like Front End web development. Since then I've been pursuing employment as a Front End Web Dev.</p>
             <br>
 
