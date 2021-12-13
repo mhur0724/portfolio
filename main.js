@@ -21,6 +21,15 @@ const toolKit = Array.from(document.querySelector(".my__toolkit").children);
 theme.addEventListener("click", changeTheme);
 nintendo.addEventListener("click", nintendoPlay);
 menuBtn.addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    header__ul__li.forEach((item) => {
+      item.addEventListener("click", () => {
+        header__ul.classList.remove("header__ul--open");
+        menuBtn.classList.remove("menu-button--open");
+      });
+    });
+  }
+
   menuBtn.classList.toggle("menu-button--open");
   header__ul.classList.toggle("header__ul--open");
 });

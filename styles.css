@@ -29,9 +29,9 @@ body {
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   transform: translateX(-100vw);
   transition: transform 0.3s ease-in-out;
@@ -50,6 +50,11 @@ body {
   width: 100%;
 }
 
+.header__ul__links {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
 .theme {
   margin: auto;
 }
@@ -70,12 +75,17 @@ body {
 }
 
 .theme__image {
+  position: fixed;
+  bottom: 4rem;
+  left: 50%;
+
   height: 50px;
+  transform: translateX(-50%);
 }
 
 .theme__image:hover {
   cursor: pointer;
-  transform: scale(1.25);
+  transform: translateX(-50%) scale(1.25);
 }
 
 .menu-button {
@@ -201,11 +211,14 @@ body {
 
 .overlay a {
   text-decoration: none;
-  background: white;
   margin: auto;
   color: #e60012;
 }
-
+.overlay a img {
+  height: 3rem;
+  background: none;
+  border: none;
+}
 .project__image {
   display: flex;
   justify-content: center;
@@ -222,6 +235,10 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.project__title img {
+  height: 4.5rem;
 }
 
 .project__text {
@@ -386,7 +403,7 @@ body {
   }
 
   .header__ul__links {
-    display: flex;
+    flex-direction: row;
     height: 100%;
     margin: 0 auto;
   }
@@ -399,6 +416,7 @@ body {
     position: fixed;
     right: 0;
     top: 0;
+    left: auto;
     margin: 0.5rem 1rem;
     z-index: 4;
   }
@@ -416,5 +434,11 @@ body {
   }
   .project {
     max-width: 40rem;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .projects__cards {
+    display: flex;
   }
 }
