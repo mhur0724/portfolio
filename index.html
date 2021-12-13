@@ -29,8 +29,8 @@
     
                 <div class="header__ul__links">
                     <li class="header__ul__li"><a href="#projects">Projects</a></li>
-                    <li class="header__ul__li"><a href="#">GitHub</a></li>
-                    <li class="header__ul__li"><a href="https://www.linkedin.com/in/matthewhur/">LinkedIn</a></li>
+                    <li class="header__ul__li"><a href="https://github.com/mhur0724" target="_blank">GitHub</a></li>
+                    <li class="header__ul__li"><a href="https://www.linkedin.com/in/matthewhur/" target="_blank">LinkedIn</a></li>
                     <li class="header__ul__li"><a href="#">Resume</a></li>
                 </div>
 
@@ -53,6 +53,7 @@
             </div>
         </div>
         </section>
+        
         <section id="projects">
 
 
@@ -62,7 +63,7 @@
             <div class="project nintendo-card">
                     <h1 class="project__title nintendo">Nintendon't</h1>
 
-                <div class="project__image nintendo-card__project-image">
+                <div class="project__image">
                     <img src="images/nintendo-nt-mock.png" alt="">
                     <div class="overlay">
                         <a class="nintendo" href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
@@ -74,6 +75,26 @@
                     
 
                     <p>This is a clone of Nintendo's landing page that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
+                </div>
+                <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
+                <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
+            </div>
+             <div class="project portfolio-card">
+                <h1 class="project__title portfolio__title">Pokedex</h1>
+
+                <div class="project__image">
+                    <img id="pokedex-image" src="images/pokedex.png" alt="">
+                    <div class="overlay">
+                        <a class="nintendo" href="https://mhur0724.github.io/pokedex/" target="_blank">Live Site</a>
+                        <a class="nintendo" href="https://github.com/mhur0724/pokedex" target="_blank">Github</a>
+                    </div>
+                </div>
+
+                <div class="project__text">
+                    
+
+                    <p>This is a pokedex I made using fetch to call a Pokemon API. I wanted to focus on using JS so it is not responsive. To use it, you can enter either the name or the ID of the pokemon. The API can have some unexpected added information like "Pumpkaboo-average" so you may want to defer to using ID's if you cannot find your desired Pokemon. </p>
+                    <p>It currently has a bug with the evolution images section of the pokedex. For whatever reason it occasionally mixes up the order of the evolution chain. I believe I need to add async/await somewhere in the code.</p>
                 </div>
                 <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
                 <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
@@ -138,25 +159,7 @@
                     <p>I used CAD to design everything, 3D printed everything on Form 3 SLA printers, and painted everything with acrylic and spray paint. </p>
                 </div>
             </div>
-            <div class="project portfolio-card">
-                <h1 class="project__title portfolio__title">Pokedex</h1>
-
-                <div class="project__image nintendo-card__project-image">
-                    <img src="images/pokedex.png" alt="">
-                    <div class="overlay">
-                        <a class="nintendo" href="https://mhur0724.github.io/nintendo-nt/" target="_blank">Live Site</a>
-                        <a class="nintendo" href="https://github.com/mhur0724/nintendo-nt" target="_blank">Github</a>
-                    </div>
-                </div>
-
-                <div class="project__text">
-                    
-
-                    <p>A pokedex</p>
-                </div>
-                <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
-                <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
-            </div>
+           
 
 
         </div>

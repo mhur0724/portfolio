@@ -184,15 +184,6 @@ body {
   margin: 0 auto 1rem;
 }
 
-.nintendo-card__project-image {
-  position: relative;
-  background: #b19cd9;
-  border-radius: 0.5rem;
-}
-
-.nintendo-card__project-image--dodgers {
-  background: #a2d2ff;
-}
 .overlay {
   display: flex;
   justify-content: center;
@@ -215,17 +206,28 @@ body {
   color: #e60012;
 }
 
+.project__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  position: relative;
+  background: #b19cd9;
+  border-radius: 0.5rem;
+}
 .project__image:hover .overlay {
   opacity: 1;
 }
 .project__image img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .project__text {
   display: none;
 }
+
 .nintendo {
   align-self: flex-start;
   font-family: "Press Start 2P", cursive;
@@ -254,6 +256,11 @@ body {
   background: none;
 }
 
+#pokedex-image {
+  width: 80%;
+  max-width: 40rem;
+  border-radius: 0.25rem;
+}
 .project__links a {
   position: relative;
   text-decoration: none;
@@ -336,7 +343,9 @@ body {
   background: var(--dodger-blue);
   color: white;
 }
-
+.project__image--dodgers {
+  background: #a2d2ff;
+}
 .nintendo--dodgers {
   background: white;
 }

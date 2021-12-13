@@ -5,11 +5,10 @@ const header__ul__li = document.querySelectorAll(".header__ul__li");
 const about__me = document.querySelector(".about__me");
 const about__me__intro = document.querySelector(".about__me__intro");
 const projects = document.querySelector(".projects");
+const projectImgDiv = document.querySelectorAll(".project__image");
 const project = document.querySelectorAll(".project");
 const nintendo = document.querySelector(".nintendo");
-const nintendoImgBackgroundColor = document.querySelector(
-  ".nintendo-card__project-image"
-);
+
 const audioCoin = document.querySelector(".nintendo-audio-coin");
 const audio1Up = document.querySelector(".nintendo-audio-1up");
 const menuBtn = document.querySelector(".menu-button");
@@ -48,9 +47,10 @@ function changeTheme() {
   toolKit.forEach((item) => {
     item.classList.toggle("color--dodgers-red");
   });
-  nintendoImgBackgroundColor.classList.toggle(
-    "nintendo-card__project-image--dodgers"
-  );
+  projectImgDiv.forEach((item) => {
+    item.classList.toggle("project__image--dodgers");
+    console.log(item.classList);
+  });
 }
 
 let nintendoClick = 0;
