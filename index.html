@@ -7,13 +7,14 @@
     <title>Matthew Hur</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/1dbd4f81be.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -43,18 +44,20 @@
     </header>
     <main>
         <section>
-        <div class="about__me">
-            <div class="about__me__intro">
+        <div class="intro">
+            <div class="intro__text">
                     <span>Hi, My name is Matthew Hur.</span>
                     <br>
-                    <p>I am a front end web developer based in Los Angeles.</p>
-                    <p>Outside of web development you can find me practicing &#127936, playing &#127918, or losing at ♟️</p>
+                    <p>I am a self-taught front end web developer based in Los Angeles.</p>
+
 
             </div>
+           <a href="#projects"><i class="fas fa-chevron-down fa-lg"></i></a>
+        
         </div>
         </section>
-    <span class="mq-value"></span>
-        
+
+
         <section id="projects">
 
 
@@ -63,7 +66,9 @@
             
             <div class="projects__cards">
                 <div class="project nintendo-card">
-                        <h1 class="project__title nintendo">Nintendon't</h1>
+                        <h1 class="project__title">
+                            <p class="nintendo">Nintendon't</p>
+                        </h1>
                     <div class="project__image">
                         <img src="images/nintendo-nt-mock.png" alt="">
                         <div class="overlay">
@@ -89,7 +94,10 @@
                     </div>
                     <div class="project__text">
                 
-                        <p>This is a pokedex I made using fetch to call a Pokemon API. I wanted to focus on using JS and so it is not responsive. To use it, you can enter either the name or the ID of the pokemon. The API can have some unexpected added information like "Pumpkaboo-average" so you may want to defer to using ID's if you cannot find your desired Pokemon. </p>
+                        <p>This is a pokedex I made that uses fetch to call a Pokemon API. This project is meant to be JS centered so it is not responsive. </p>
+                            
+                            <p>
+                            To use it, you can enter either the name or the ID of the pokemon. The API can have some unexpected names with added information like "Pumpkaboo-average" so you may want to defer to using pokemon's ID if you cannot find your desired Pokemon. </p>
                         <p>It currently has a bug with the evolution images section of the pokedex. For whatever reason it occasionally mixes up the order of the evolution chain. I believe I need to add async/await somewhere in the code.</p>
                     </div>
                     <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
@@ -151,7 +159,8 @@
                         <p>This project itself isn't a web development project, but this card implements a bootstrap carousel to display these 3D stills.</p>
                 
                         <p>I made these for my friends who all love Ghibli movies. A lot of hours went into this but I think it turned out great! </p>
-                        <p>I used CAD to design everything, 3D printed everything on Form 3 SLA printers, and painted everything with acrylic and spray paint. </p>
+
+                        <p>With the exception of the more complex STL files (lamp post, log, house, etc). I designed everything on CAD, 3D printed the files on Form 3 printers, and painted everything using a mixture of acrylic and spray paint.</p>
                     </div>
                 </div>
             </div>
@@ -161,10 +170,15 @@
 
         <section>
             
-        <div class="more__about__me">
+        <div class="about__me">
 
             <h1>About Me</h1>
-            <p>Thanks for scrolling this far! If you're curious, here's a little more about me. I graduated from Boston University with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've dabbled in various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) but none of them really captured my interest quite like Front End web development. Since then I've been pursuing employment as a Front End Web Dev.</p>
+
+            <p>Hello! Thank you for checking out my portfolio! While I hope my portfolio has given you a better insight into who I am, here is some information about my background.</p>
+
+            <p>I graduated from Boston University in 2018 with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've tinkered with various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) however it wasn't until August of 2021 that I started my Front End journey.</p>
+
+            <p>Outside of web development you can find me practicing &#127936, playing &#127918, or losing at ♟️.</p>
             <br>
 
         </div>
@@ -180,7 +194,6 @@
             <ul class="my__toolkit__ul">
                 <li class="my__toolkit__ul__li">
                     <i class="fab fa-html5 fa-3x"></i>
-
                     <p>HTML5</p>
                 </li>
                 <li class="my__toolkit__ul__li">

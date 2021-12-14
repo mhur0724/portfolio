@@ -2,20 +2,18 @@ const theme = document.querySelector(".theme__image");
 const body = document.body;
 const header__ul = document.querySelector(".header__ul");
 const header__ul__li = document.querySelectorAll(".header__ul__li");
-const about__me = document.querySelector(".about__me");
-const about__me__intro = document.querySelector(".about__me__intro");
+const intro = document.querySelector(".intro");
+const introText = document.querySelector(".intro__text");
+const scrollArrow = document.querySelector(".fa-chevron-down");
 const projects = document.querySelector(".projects");
 const projectImgDiv = document.querySelectorAll(".project__image");
 const project = document.querySelectorAll(".project");
 const nintendo = document.querySelector(".nintendo");
-
 const audioCoin = document.querySelector(".nintendo-audio-coin");
 const audio1Up = document.querySelector(".nintendo-audio-1up");
 const menuBtn = document.querySelector(".menu-button");
 const menuBtnLines = document.querySelector(".menu-button__lines");
-const moreAboutMe = Array.from(
-  document.querySelector(".more__about__me").children
-);
+const aboutMe = Array.from(document.querySelector(".about__me").children);
 const toolKit = Array.from(document.querySelector(".my__toolkit").children);
 
 theme.addEventListener("click", changeTheme);
@@ -42,15 +40,16 @@ function changeTheme() {
     element.classList.toggle("header__ul__li--dodgers")
   );
   menuBtnLines.classList.toggle("menu-button__lines--dodgers");
-  about__me.classList.toggle("about__me--dodgers");
-  about__me__intro.classList.toggle("about__me__intro--dodgers");
+  intro.classList.toggle("intro--dodgers");
+  introText.classList.toggle("intro__text--dodgers");
+  scrollArrow.classList.toggle("color--dodgers-blue");
   projects.classList.toggle("projects--dodgers");
   project.forEach((element) => element.classList.toggle("project--dodgers"));
   if (theme.src.includes("images/dodgers-logo.png")) {
     theme.src = "images/lakers-logo.png";
   } else theme.src = "images/dodgers-logo.png";
   nintendo.classList.toggle("nintendo--dodgers");
-  moreAboutMe.forEach((item) => {
+  aboutMe.forEach((item) => {
     item.classList.toggle("color--dodgers-red");
   });
   toolKit.forEach((item) => {
