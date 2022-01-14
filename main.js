@@ -10,11 +10,12 @@ const projectImgDiv = document.querySelectorAll(".project__image");
 const project = document.querySelectorAll(".project");
 const nintendo = document.querySelector(".nintendo");
 const audioCoin = document.querySelector(".nintendo-audio-coin");
-const audio1Up = document.querySelector(".nintendo-audio-1up");
 const menuBtn = document.querySelector(".menu-button");
 const menuBtnLines = document.querySelector(".menu-button__lines");
 const aboutMe = Array.from(document.querySelector(".about__me").children);
 const toolKit = Array.from(document.querySelector(".my__toolkit").children);
+const projectButtons = document.querySelectorAll(".project-button");
+const traversyLink = document.getElementById("traversy-link");
 
 theme.addEventListener("click", changeTheme);
 nintendo.addEventListener("click", nintendoPlay);
@@ -57,14 +58,18 @@ function changeTheme() {
   });
   projectImgDiv.forEach((item) => {
     item.classList.toggle("project__image--dodgers");
-    console.log(item.classList);
   });
+  projectButtons.forEach((item) => {
+    item.classList.toggle("background--dodgers-red");
+  });
+  traversyLink.classList.toggle("color--dodgers-white");
 }
 
 let nintendoClick = 0;
 
 function nintendoPlay() {
   audioCoin.currentTime = 0;
+  audioCoin.volume = 0.1;
   audioCoin.play();
 }
 

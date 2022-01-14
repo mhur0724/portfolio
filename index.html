@@ -65,10 +65,49 @@
             <h1 >Click on any project to learn more!</h1>
             
             <div class="projects__cards">
+
+                <div class="project portfolio-card natural-events">
+                    <h1 class="project__title portfolio__title">Natural Events Tracker</h1>
+                    <div class="project__image">
+                        <img id="event-tracker-image" src="images/event-tracker.png" alt="">
+                        <div class="overlay">
+                            <a class="project-button" style="color: white" href="https://mhur0724.github.io/event-tracker" target="_blank">Live Site</a>
+                            <a  class="project-button"  style="color: white"  href="https://github.com/mhur0724/event-tracker" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project__text">
+                
+                        <p>A React based Natural Events Tracker (<a id="traversy-link" href="https://youtu.be/ontX4zfVqK8" target="_blank">inspired by TraversyMedia</a>), but I've added the ability to filter the events that you'd like to see. </p>
+                     
+                        <p>It utilizes both the Google Maps API and NASA's Event Tracker API in order to return a map of the coordinates and information of the filtered event(s) that have taken place over the globe.</p>
+                     
+                    </div>
+                    <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
+                    <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
+                </div>
+                <div class="project portfolio-card">
+                    <h1 class="project__title portfolio__title"><img src="images/pokedex-title.png" alt=""></h1>
+                    <div class="project__image">
+                        <img id="pokedex-image" src="images/pokedex.png" alt="">
+                        <div class="overlay">
+                            <a  href="https://mhur0724.github.io/pokedex/" target="_blank"><img src="images/pokedex-live-site.png" alt=""></a>
+                            <a  href="https://github.com/mhur0724/pokedex" target="_blank"><img src="images/pokedex-github.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project__text">
+                
+                        <p>This is a pokedex I made that uses fetch to call a Pokemon API. This project is meant to be Javascript centered so it is not responsive. </p>
+                             
+                            <p>
+                            To use it, you can enter either the name or the ID of the pokemon. The API can have some unexpected names with added information like "Pumpkaboo-average" so you may want to defer to using pokemon's ID if you cannot find your desired Pokemon. </p>
+                     
+                    </div>
+
+                </div>
                 <div class="project nintendo-card">
-                        <h1 class="project__title">
-                            <p class="nintendo">Nintendon't</p>
-                        </h1>
+                    <h1 class="project__title">
+                        <p class="nintendo">Nintendon't</p>
+                    </h1>
                     <div class="project__image">
                         <img src="images/nintendo-nt-mock.png" alt="">
                         <div class="overlay">
@@ -80,28 +119,6 @@
                 
                         <p>This is a clone of Nintendo's landing page that I made using HTML, CSS, and some JS. The goal of this project was to better understand how to make a responsive website using a mobile first approach.</p>
                     </div>
-                    <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
-                    <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
-                </div>
-                 <div class="project portfolio-card">
-                    <h1 class="project__title portfolio__title"><img src="images/pokedex-title.png" alt=""></h1>
-                    <div class="project__image">
-                        <img id="pokedex-image" src="images/pokedex.png" alt="">
-                        <div class="overlay">
-                            <a  href="https://mhur0724.github.io/pokedex/" target="_blank"><img src="images/pokedex-live-site.png" alt=""></a>
-                            <a  href="https://github.com/mhur0724/pokedex" target="_blank"><img src="images/pokedex-github.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="project__text">
-                
-                        <p>This is a pokedex I made that uses fetch to call a Pokemon API. This project is meant to be JS centered so it is not responsive. </p>
-                            
-                            <p>
-                            To use it, you can enter either the name or the ID of the pokemon. The API can have some unexpected names with added information like "Pumpkaboo-average" so you may want to defer to using pokemon's ID if you cannot find your desired Pokemon. </p>
-                     
-                    </div>
-                    <audio class="nintendo-audio-coin" src="sounds/mario-coin.mp3"></audio>
-                    <audio class="nintendo-audio-1up" src="sounds/mario-1up.mp3"></audio>
                 </div>
                 <div class="project studio-ghibli-card">
                     <h1 class="project__title">Studio Ghibli 3D Still</h1>
@@ -176,7 +193,7 @@
 
             <p>Hello! Thank you for checking out my portfolio! While I hope my portfolio has given you a better insight into who I am, here is some information about my background.</p>
 
-            <p>I graduated from Boston University in 2018 with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've tinkered with various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) however it wasn't until August of 2021 that I started my Front End journey.</p>
+            <p>I graduated from Boston University in 2018 with a Bachelors of Science in Mechanical Engineering. During my schooling and personal life I've tinkered with various other coding endeavours (Matlab, Python, ML, arduino, rasperry pi) however it wasn't until August of 2021 that I discovered and fell in love with Front End Development.</p>
 
             <p>Outside of web development you can find me practicing &#127936, playing &#127918, or losing at ♟️.</p>
             <br>
@@ -193,18 +210,27 @@
             <h1>My Toolkit <i class="fas fa-toolbox"></i></h1>
             <ul class="my__toolkit__ul">
                 <li class="my__toolkit__ul__li">
+                    <i class="fab fa-react fa-3x"></i>
+                    <p>React</p>
+                </li>
+                <li class="my__toolkit__ul__li">
                     <i class="fab fa-html5 fa-3x"></i>
                     <p>HTML5</p>
                 </li>
                 <li class="my__toolkit__ul__li">
                     <i class="fab fa-css3-alt fa-3x"></i>
 
-                    <p>CSS</p>
+                    <p>CSS</p> 
                 </li>
                 <li class="my__toolkit__ul__li">
                     <i class="fab fa-js-square fa-3x"></i>
 
                     <p>Javascript</p>
+                </li>
+                <li class="my__toolkit__ul__li">
+                    <i class="fab fa-github fa-3x"></i>
+
+                    <p>GitHub</p>
                 </li>
             </ul>
         </div>

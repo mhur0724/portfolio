@@ -24,6 +24,16 @@ body {
   font-family: "Sora", sans-serif;
 }
 
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
 .header__ul {
   position: fixed;
   top: 0;
@@ -275,6 +285,19 @@ body {
   display: none;
 }
 
+#event-tracker-image {
+  width: 80%;
+}
+
+.natural-events h1 {
+  font-size: 1.75rem;
+}
+
+.project-button {
+  background-color: var(--lakers-gold);
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
 .nintendo {
   font-family: "Press Start 2P", cursive;
   color: #e60012;
@@ -419,6 +442,9 @@ body {
 
 .color--dodgers-red {
   color: var(--dodger-red);
+}
+.color--dodgers-white {
+  color: white;
 }
 
 @media (min-width: 600px) {
