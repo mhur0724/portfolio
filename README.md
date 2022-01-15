@@ -20,7 +20,7 @@ This is my fully responsive portfolio website made using JavaScript, HTML, and C
 
 I think the coolest feature is the ability to toggle from a Lakers to Dodgers theme but an honorable mention is the little easter egg I've hidden in the projects section!
 
-In the future I do want to clean up the code a bit more, especially for the theme toggle section. I think react's abiltiy to conditionally render styling would help a lot with this.
+In the future I do want to clean up the code a bit more, especially for the theme toggle section. I think React's abiltiy to conditionally render styling would help a lot with this.
     <br />
     <br />
     <a href="https://mhur0724.github.io/portfolio/">View Demo</a>
