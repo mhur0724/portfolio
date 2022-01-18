@@ -168,7 +168,7 @@ a:hover {
 .intro__text {
   display: flex;
   flex-direction: column;
-  height: 75%;
+  height: 100%;
   width: 100%;
   justify-content: center;
 }
@@ -347,8 +347,6 @@ a:hover {
   height: 20rem;
 }
 
-.carousel {
-}
 .carousel-item h5 {
   background: rgba(0, 0, 0, 0.3);
   padding: 1rem 2rem;
@@ -378,6 +376,7 @@ a:hover {
 
 .my__toolkit__ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
 }
